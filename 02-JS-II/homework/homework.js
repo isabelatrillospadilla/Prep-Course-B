@@ -199,6 +199,7 @@ function devolverString(str) {
     //como parámetro un número de euros y calcule el cambio en dólares.
     //Escribe tu código aquí
     return 1.20 * euro; 
+    
   }
   
   // No modificar nada debajo de esta línea
