@@ -14,45 +14,55 @@ function devolverString(str) {
     // "x" e "y" son números
     // Suma "x" e "y" juntos y devuelve el valor
     // Tu código:
-    var sumar = x + y;
-    return sumar;
+    // var sumar = x + y; (es una opcion)
+    //return sumar;
+    return x + y
   }
   
   function resta(x, y) {
     // Resta "y" de "x" y devuelve el valor
     // Tu código:
-    var restar = x - y ;
-    return restar;
+   //  var restar = x - y ; ( es una opcion )
+    //return restar;
+    return x - y
   }
   
   function multiplica(x, y) {
     // Multiplica "x" por "y" y devuelve el valor
     // Tu código:
-    var multipilicar = x * y;
-    return multipilicar;
+    //var multipilicar = x * y; es una opcion 
+    //return multipilicar;
+    return x * y
   }
   
   function divide(x, y) {
     // Divide "x" entre "y" y devuelve el valor
     // Tu código:
-    var dividir = x / y;
-    return dividir;
+    //var dividir = x / y; es una opcion 
+    //return dividir;
+    return x / y
   }
   
   function sonIguales(x, y) {
     // Devuelve "true" si "x" e "y" son iguales
     // De lo contrario, devuelve "false"
     // Tu código:
-    var igualdad = (x === y);
-    return igualdad;
+    //var igualdad = (x === y);
+    //return igualdad;
+    if (x == y){
+      return true;
+    } else {
+      return false;
+    }
   }
   
   function tienenMismaLongitud(str1, str2) {
     // Devuelve "true" si las dos strings tienen la misma longitud
     // De lo contrario, devuelve "false"
     // Tu código:
-    return (str1.length === str2.length)
-    
+   // return (str1.length === str2.length)
+    if (str1.length == str2.length) return true 
+    else return false;
   }
   
   function menosQueNoventa(num) {
@@ -80,8 +90,9 @@ function devolverString(str) {
   function obtenerResto(x, y) {
     // Obten el resto de la división de "x" entre "y"
     // Tu código:
-    var resto = x % y;
-    return resto;
+    //var resto = x % y;
+    //return resto;
+    return x % y
   }
   
   function esPar(num) {
@@ -102,26 +113,28 @@ function devolverString(str) {
     // Devuelve el valor de "num" elevado al cuadrado
     // ojo: No es raiz cuadrada!
     // Tu código:
-    return num ** 2; 
+    //return num ** 2;
+    return Math.pow(num, 2) 
   }
   
   function elevarAlCubo(num) {
     // Devuelve el valor de "num" elevado al cubo
     // Tu código:
-    return num ** 3;
-    elevarAlCubo(3);
+    //return num ** 3;
+    return Math.pow(num, 3) 
+   
   }
   
   function elevar(num, exponent) {
     // Devuelve el valor de "num" elevado al exponente dado en "exponent"
     // Tu código:
-    return num ** exponent;
+    //return num ** exponent;
+    return Math.pow(num, exponent) 
   }
   
   function redondearNumero(num) {
     // Redondea "num" al entero más próximo y devuélvelo
     // Tu código:
-   
    return Math.round(num);
   }
   
@@ -135,8 +148,9 @@ function devolverString(str) {
     //Generar un número al azar entre 0 y 1 y devolverlo
     //Pista: investigá qué hace el método Math.random()
     // Tu código:
-    var x = Math.random();
-    return x;
+    //var x = Math.random();
+    //return x;
+    return Math.random()
   }
   
   function esPositivo(numero) {
@@ -146,13 +160,20 @@ function devolverString(str) {
     //Si el número es negativo, devolver ---> "Es negativo"
     //Si el número es 0, devuelve false
     // Tu código:
-    var resultado = Math.sign(numero);
+    /*var resultado = Math.sign(numero);
     if (resultado === 1){
       return "Es positivo"
     }else if (resultado === -1){
       return "Es negativo";
     }else (resultado === 0)
-      return false;
+      return false;*/
+      if (numero > 0){
+        return "Es positivo"
+      } else if (numero < 0){
+        return "Es negativo"
+      }else{
+        return false
+      }
     }
     
   function agregarSimboloExclamacion(str) {
@@ -185,7 +206,8 @@ function devolverString(str) {
   function retornarPerimetro(lado) {
     //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
     //Escribe tu código aquí
-    return lado + lado + lado + lado;
+    //return lado + lado + lado + lado;
+    return lado * 4
   }
   
   function areaDelTriangulo(base, altura) {
