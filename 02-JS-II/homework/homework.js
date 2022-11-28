@@ -41,6 +41,7 @@ function devolverString(str) {
     //var dividir = x / y; es una opcion 
     //return dividir;
     return x / y
+
   }
   
   function sonIguales(x, y) {
@@ -49,6 +50,7 @@ function devolverString(str) {
     // Tu código:
     //var igualdad = (x === y);
     //return igualdad;
+  
     if (x == y){
       return true;
     } else {
